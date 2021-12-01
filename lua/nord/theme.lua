@@ -105,8 +105,8 @@ theme.loadEditor = function ()
     PmenuSbar =        { fg = nord.nord4_gui, bg = nord.nord2_gui },
     PmenuThumb =       { fg = nord.nord4_gui, bg = nord.nord4_gui },
     Question =         { fg = nord.nord14_gui },
-    QuickFixLine =     { fg = nord.nord4_gui, bg = nord.nord6_gui, style = 'reverse' },
-    qfLineNr =         { fg = nord.nord4_gui, bg = nord.nord6_gui, style = 'reverse' },
+    QuickFixLine =     { fg = nord.nord4_gui, bg = nord.none, style = 'reverse' },
+    qfLineNr =         { fg = nord.nord4_gui, bg = nord.none, style = 'reverse' },
     Search =           { fg = nord.nord10_gui, bg = nord.nord6_gui, style = 'reverse' },
     SpecialKey =       { fg = nord.nord9_gui },
     SpellBad =         { fg = nord.nord11_gui, bg = nord.none, style = 'italic,undercurl' },
@@ -283,6 +283,10 @@ theme.loadLSP = function ()
     LspReferenceRead =                     { fg = nord.nord4_gui, bg = nord.nord1_gui }, -- used for highlighting "read" references
     LspReferenceWrite =                    { fg = nord.nord4_gui, bg = nord.nord1_gui }, -- used for highlighting "write" references
 
+    DiagnosticError            = { link = "LspDiagnosticsDefaultError" },
+    DiagnosticWarn             = { link = "LspDiagnosticsDefaultWarning" },
+    DiagnosticInfo             = { link = "LspDiagnosticsDefaultInformation" },
+    DiagnosticHint             = { link = "LspDiagnosticsDefaultHint" },
     DiagnosticVirtualTextWarn  = { link = "LspDiagnosticsVirtualTextWarning" },
     DiagnosticUnderlineWarn    = { link = "LspDiagnosticsUnderlineWarning" },
     DiagnosticFloatingWarn     = { link = "LspDiagnosticsFloatingWarning" },
